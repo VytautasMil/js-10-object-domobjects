@@ -1,6 +1,5 @@
 // atspausdinti konsoleje username ir email
 // sukurti kintamaji ir i ji irasyti string pavidalus adreso gatve, miesta ir zipcode.
-// sukurti nauja objekta coords ir i ji irasyti latitude and longitude koorrdinates.
 
 const us1 = {
     id: 1,
@@ -25,3 +24,10 @@ const us1 = {
       bs: 'harness real-time e-markets',
     },
   };
+  
+  // sukurti nauja objekta coords ir i ji irasyti latitude and longitude koorrdinates.
+  const coords = {
+    latitude: +us1.address.geo.lat,
+    longitude: +us1.address.geo.lng,
+  };
+  console.log('coords ===', coords);
